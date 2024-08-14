@@ -4,18 +4,9 @@ namespace Assignment2
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             // Task 1
-            WriteLine("*************************");
-            WriteLine("*Last name: Nguyen      *");
-            WriteLine("*First name: Le Thao Nhi*");
-            WriteLine("*Student ID: 11527293   *");
-            WriteLine("*************************");
-
-
-            // Task 2
             int aNumber;
             int cNumber; 
             int sNumber; 
@@ -39,7 +30,7 @@ namespace Assignment2
             while (sNumber < 0);
 
 
-            // Task 3
+            // Task 2
             WriteLine("The number of tickets of adult is {0}, of children is {1} and of senior is {2}", aNumber, cNumber, sNumber);
             const double aTicket = 20;                  
             const double cTicket = aTicket * 0.5;       
@@ -51,7 +42,7 @@ namespace Assignment2
             WriteLine("The total revenue is {0}", total.ToString("C"));
 
 
-            // Task 4
+            // Task 3
             if (aNumber <= cNumber + sNumber)
                 WriteLine("The event is becoming a festival for everyone!");
             if (cNumber >= sNumber)
@@ -59,7 +50,7 @@ namespace Assignment2
             else WriteLine("The event should have more space for kids!");
 
 
-            // Task 5
+            // Task 4
             Write("Enter the number of participants in this year's event: ");
             int pNumber = int.Parse(ReadLine());
             while (pNumber < 0 || pNumber > 40)
@@ -69,7 +60,7 @@ namespace Assignment2
             }
 
 
-            // Task 6
+            // Task 5
             string[] pName = new string[pNumber];
             char[] pCode = new char[pNumber];
             int sCount = 0;
